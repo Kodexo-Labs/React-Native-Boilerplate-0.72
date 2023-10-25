@@ -1,10 +1,12 @@
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import React, {useEffect} from 'react';
 import SplashScreen from 'react-native-splash-screen';
 import {NavigationContainer} from '@react-navigation/native';
+import Toast from 'react-native-toast-message';
 
 import {Provider} from 'react-redux';
 import {store} from './src/store';
+import MainNavigator from './src/navigation/MainNavigator';
 
 const App = () => {
   useEffect(() => {
@@ -14,7 +16,8 @@ const App = () => {
     <SafeAreaView style={styles.flex}>
       <Provider store={store}>
         <NavigationContainer>
-          <Text>App</Text>
+          <MainNavigator />
+          <Toast />
         </NavigationContainer>
       </Provider>
     </SafeAreaView>
