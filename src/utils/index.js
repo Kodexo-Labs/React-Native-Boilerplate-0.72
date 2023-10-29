@@ -1,6 +1,6 @@
 import {Platform} from 'react-native';
 
-export const emailReg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+export const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 // make first latter capital
 export const capitalizeFirstLetter = string => {

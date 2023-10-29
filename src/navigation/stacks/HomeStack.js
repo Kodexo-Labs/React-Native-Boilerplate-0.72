@@ -1,6 +1,6 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Home} from '../../screens';
+import {Home, HomeScreen2} from '../../screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,6 +12,7 @@ const HomeStack = () => {
       }}
       initialRouteName="Home">
       <Stack.Screen component={Home} name="Home" />
+      <Stack.Screen component={HomeScreen2} name="HomeScreen2" />
     </Stack.Navigator>
   );
 };

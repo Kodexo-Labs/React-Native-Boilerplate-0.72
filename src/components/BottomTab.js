@@ -1,12 +1,7 @@
 import {Text, StyleSheet} from 'react-native';
 import React from 'react';
 
-const BottomTab = ({
-  focused,
-  activeIcon = () => null,
-  inactiveIcon = () => null,
-  name,
-}) => {
+const BottomTab = ({focused, activeIcon = null, inactiveIcon = null, name}) => {
   return (
     <>
       {focused ? activeIcon() : inactiveIcon()}
