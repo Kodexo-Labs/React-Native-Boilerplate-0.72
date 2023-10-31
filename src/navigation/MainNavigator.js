@@ -11,6 +11,7 @@ const MainNavigator = () => {
   const auth = useAuth();
   const language = useLanguage();
   useEffect(() => {
+    // hello
     if (language) {
       i18n.changeLanguage(language);
     }
