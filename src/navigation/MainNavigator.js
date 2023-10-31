@@ -14,7 +14,8 @@ const MainNavigator = () => {
     if (language) {
       i18n.changeLanguage(language);
     }
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <Stack.Navigator
       screenOptions={{
